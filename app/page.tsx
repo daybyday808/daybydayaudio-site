@@ -42,7 +42,14 @@ export default function Home() {
           <div className="h-full w-full bg-gradient-to-br from-orange-100 via-amber-100 to-white" />
         </div>
         <div className="mx-auto max-w-7xl px-4 py-20">
-          <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
+              
+       <motion.div
+         initial={{ opacity: 0, y: 12 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.6 }}
+         // @ts-ignore
+         className="max-w-3xl"
+         >
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
               Fuel your mind, <span className="bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">one day at a time.</span>
             </h1>
